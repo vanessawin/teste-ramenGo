@@ -4,29 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
   <title>RamenGo</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Icon na aba do navegador -->
+  <link rel="shortcut icon" href="./img/bowing.png" type="image/x-icon">
+  <!-- Link Css -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
-    <img class="logo-desk" src="./img/logo.png" alt="Logo">
-    <section class="link">
+    <a class="fundoDesktop" href="#menus">
+      <img class="imagem-headar" src="./img/hero.png" alt="Hader menu">
+    </a>
+    <div class="header-mobile">
+      <img class="logomobile" src="./img/amarelo.png" alt="Logo ramengo">
+      <img class="ilustracao-header" src="./img/ilustracao-header.png" alt="Imagem entegador">
+      <h2>ラーメン</h2>
+      <h1>GO!</h1>
       <p>Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!</p>
-      <button class="order-now-button">Order Now</button>
-    </section>
+      
+    </div>
   </header>
-  <main class="menu">
-    <section class="menu-broth">
-      <h1>First things first: select your favorite broth.</h1>
-      <p>It will give the whole flavor on your ramen soup. </p>
+  <!-- Seçao Slider de cardapi -->
+  <main id="menus">
+
+    <!-- Slider Broth -->
+    <div class="slider-contener" id="slider-broth" data-type="broth">
+      <h1 class="titulo-slider">First things first: select your favorite broth.</h1>
+      <p class="subtitulo-slider">It will give the whole flavor on your ramen soup. </p>
+
+      <div class="slider-wapper" id="slider-wapper-broth">
+        <!-- Dados vai vir da api broth -->
+      </div>
+    </div>
+    <!--Fim Slider Broth -->
+
+    <!-- Slider Meat -->
+    <div class="slider-contener" id="slider-meat" data-type="meat">
+      <h1 class="titulo-slider">It’s time to choose (or not) your meat!</h1>
+      <p class="subtitulo-slider">Some people love, some don’t. We have options for all tastes. </p>
+      <div class="slider-wapper" id="slider-wapper-meat">
+        <!-- Dados vai vir da api meat -->
+      </div>
+    </div>
+    <!-- Fim Slider Meat -->
+
+    <!-- Div fake para criar espaço -->
+    <div class="div-fake"> </div>
+    <!-- Fim da div -->
+    <!-- Buttom Place my order -->
+    <button class="btn-order">Place my order</button>
+  </main>
+
+  <!-- Pagina de Sucesso -->
+  <main id="sucesso">
+    <section class="your-order">
+      <img class="image-logo-sucess" src="./img/shape-sucess.png" alt="Logo escrito ramengo">
+      <img class="imagem-pedido" src="./img/imagemPedido.png" alt="Imagem do pedido">
+      <p>Your Order:</p>
+      <h3>Shoyu and Karaague Ramen</h3>
     </section>
-    <section class="menu-meat">
-      <h1>It’s time to choose (or not) your meat!</h1>
-      <p>Some people love, some don’t. We have options for all tastes. </p>
+    <section class="preparing-order">
+      <img class="imagem-chefe" src="./img/bowing.png" alt="Imagem RamenGo">
+      <h1>どもありがとうございます。</h1>
+      <h3>Your order is being prepared</h3>
+      <p>Hold on, when you least expect you will be eating your rámen. </p>
+      <button class="new-order">Place new order</button>
     </section>
   </main>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>

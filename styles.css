@@ -1,0 +1,459 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ /* Importando google fonts */
+ @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+ /* header */
+ .imagem-headar {
+   width: 100%;
+   max-width: 1366px;
+   max-height: 100%;
+   height: 768px;
+ }
+ @media (max-width: 760px) {
+  
+  .fundoDesktop {
+    display: none;
+  }
+  .imagem-headar  {
+    display: none;
+   }
+  }
+
+
+ /* Header Mobile */
+ .header-mobile {
+  height: 677px;
+  background-image: url(./img/fundo-mobile.png);
+  
+  display: none;
+ }
+ @media (max-width: 759px) {
+  .header-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+}
+ .logomobile {
+  width: 125px;
+  height: 16px;
+  position: absolute;
+  top: 20px;
+ }
+ .ilustracao-header {
+  position: absolute;
+  width: 265.px;
+  height: 269px ;
+  top: 60px;
+ }
+ .header-mobile h2 {
+  position: absolute;
+  top: 341px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 48px;
+font-weight: 900;
+line-height: 56px;
+text-align: center;
+color: #FFC024;
+}
+.header-mobile h1 {
+  position: absolute;
+  top: 406px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: center;
+ color: #FAFAED;
+}
+.header-mobile p {
+  position: absolute;
+  top: 530px;
+
+  width: 300px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+ /* sliders */
+ #menus {
+   margin-top: 115px;
+   height: 900px;
+ }
+ @media (max-width: 759px) {
+  #menus {
+    margin-top: 50px;
+  }
+ }
+
+ .slider-contener {
+   max-width: 1087px;
+   height: 448px;
+   margin: 0 auto;
+   overflow: hidden;
+ }
+
+ /* Titulos Sliders */
+ .titulo-slider {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 32px;
+   font-weight: 900;
+   line-height: 47.52px;
+   text-align: center;
+   color: #000000;
+   /* @media (max-width: 760px) {
+  
+      font-size: 24px;
+      line-height: 31px;
+    
+   } */
+ }
+
+ /* Subtitulo Sliders */
+ .subtitulo-slider {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: center;
+   color: #000000;
+   margin-bottom: 28px;
+ }
+
+
+ .slider-wapper {
+   display: flex;
+   justify-content: space-between;
+
+ }
+
+ .item {
+   width: 320px;
+   height: 316px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   box-shadow: 0px 4px 12px 0px #E0DBBF99;
+   padding: 0 15px;
+   background: #FAFAED;
+ }
+
+ .item img {
+   width: 104px;
+   height: 104px;
+   object-fit: contain;
+ }
+
+ .item .title-food {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 24px;
+   text-align: center;
+   color: #1820EF;
+   margin: 5px 0;
+ }
+
+ .item .description-food {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 16px;
+   text-align: center;
+   color: #000000;
+   width: 256px;
+ }
+
+ .item .price-food {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 24px;
+   text-align: center;
+   color: #FF4E42;
+   margin-top: 15px;
+ }
+
+ /* Div criada para dar um espaço emtre o slider e o botão */
+ .div-fake {
+   width: 100px;
+   height: 79px;
+ }
+
+ /* Buttom Place my order */
+
+
+ .btn-order {
+   position: relative;
+   width: 213px;
+   height: 60px;
+   border-radius: 50px;
+   background-color: #C5C5C5;
+   color: #FFFFFF;
+   text-align: left;
+   padding-left: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 40px;
+   /* Ajusta o espaço para a seta */
+   margin: 0 auto;
+ }
+
+ .btn-order::after {
+   content: '';
+   display: block;
+   width: 20px;
+   height: 16px;
+
+
+   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"><polygon points="10 0 8.59 1.41 14.17 7 0 7 0 9 14.17 9 8.59 14.59 10 16 20 8 10 0" fill="%23FFFFFF"/></svg>') no-repeat center center;
+ }
+
+ /* .order:hover::after {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"><polygon points="10 0 8.59 1.41 14.17 7 0 7 0 9 14.17 9 8.59 14.59 10 16 20 8 10 0" fill="%23FFC024"/></svg>') no-repeat center center;
+  transition: background-color 0.3s;
+} */
+
+
+
+
+ @media (max-width: 760px) {
+   .titulo-slider {
+     font-size: 24px;
+     line-height: 31px;
+   }
+
+   /* para fazer efeito de arrastar os cards no mobile */
+   .slider-wapper {
+     overflow: auto;
+   }
+
+   .item {
+     width: 288px;
+     height: 316px;
+     justify-content: center;
+     margin: 0 4px;
+   }
+ }
+
+ /* Pagina de Sucesso */
+
+ #sucesso {
+   max-width: 1366px;
+   height: 768px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   display: none;
+ }
+
+ .your-order,
+ .preparing-order {
+   width: 50%;
+   height: 100%;
+ }
+
+ .your-order {
+   background-image: url(./img/fundo-sucess.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+ }
+
+ .image-logo-sucess {
+   position: absolute;
+   width: 124.69px;
+   height: 15.67px;
+   top: 40px;
+   left: 40px;
+ }
+
+ .imagem-pedido {
+   width: 354px;
+   height: 392px;
+ }
+
+ .your-order p {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 24px;
+   text-align: center;
+   color: #FFFFFF;
+ }
+
+ .your-order h3 {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 32px;
+   font-weight: 900;
+   line-height: 47.52px;
+   text-align: center;
+   color: #FFC024;
+
+
+ }
+
+ /* preparing-order */
+ .preparing-order {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .imagem-chefe {
+   width: 65.46px;
+   height: 71.31px;
+   margin-bottom: 10px;
+ }
+
+ .preparing-order h1 {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 24px;
+   text-align: center;
+   color: #FFC024;
+   margin-bottom: 10px;
+ }
+
+ .preparing-order h3 {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 32px;
+   font-weight: 900;
+   line-height: 40px;
+   text-align: center;
+   color: #FF4E42;
+ }
+
+ .preparing-order p {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: center;
+   color: #000000;
+   margin-top: 13px;
+   margin-bottom: 18px;
+ }
+
+ /* Button  */
+
+ .new-order {
+   position: relative;
+   width: 213px;
+   height: 60px;
+   border-radius: 50px;
+   background-color: #1820EF;
+   color: #FFFFFF;
+   text-align: left;
+   padding-left: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 40px;
+   /* Ajusta o espaço para a seta */
+ }
+
+ .new-order::after {
+   content: '';
+   display: block;
+   width: 20px;
+   height: 16px;
+   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"><polygon points="10 0 8.59 1.41 14.17 7 0 7 0 9 14.17 9 8.59 14.59 10 16 20 8 10 0" fill="%23FFC024"/></svg>') no-repeat center center;
+   transition: background-color 0.3s;
+ }
+
+ .new-order:hover {
+   background-color: #C5C5C5;
+ }
+
+ .new-order:hover::after {
+   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"><polygon points="10 0 8.59 1.41 14.17 7 0 7 0 9 14.17 9 8.59 14.59 10 16 20 8 10 0" fill="%23FFFFFF"/></svg>') no-repeat center center;
+ }
+
+ @media (max-width: 775px) {
+   #sucesso {
+     flex-direction: column;
+     height: unset;
+   }
+
+   .your-order,
+   .preparing-order {
+     width: 100%;
+   }
+
+   .your-order {
+     height: 677px;
+     position: relative;
+   }
+
+   .image-logo-sucess {
+     top: 20px;
+     left: auto;
+   }
+
+   .imagem-pedido {
+     position: absolute;
+     top: 107px;
+     max-width: 338px;
+     height: 374px;
+   }
+
+   .your-order p {
+     position: absolute;
+     top: 471px;
+   }
+
+   .your-order h3 {
+     position: absolute;
+     top: 513px;
+     font-size: 24px;
+     line-height: 32px;
+     width: 270px;
+   }
+
+   .imagem-chefe {
+     margin-top: 35px;
+   }
+
+   .preparing-order h3 {
+     font-size: 24px;
+     line-height: 32px;
+   }
+
+   .preparing-order p {
+     width: 325px;
+   }
+
+   .new-order {
+     margin-bottom: 35px;
+   }
+ }
