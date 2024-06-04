@@ -50,48 +50,7 @@ async function fetchBroths() {
   }
 }
 fetchBroths()
-// // Função para listar proteínas
-// async function fetchProteins() {
-//   try {
-//       const response = await fetch(proteinsUrl, { headers });
-//       if (response.ok) {
-//           const proteins = await response.json();
-//           console.log("aquiProteins:", proteins);
-//           const wapperMeat = document.querySelector("#slider-wapper-meat")
-//           console.log("slider-wapper-meat", slider-wapper-meat)
-//           // proteins.forEach(item => {
-        
-//       //     const divItem = document.createElement('div');
-//       //          divItem.setAttribute("class", "item" )
-//       //            divItem.setAttribute("id", item.id )
-//       //     const imgInative = document.createElement('img'); 
-//       //     imgInative.setAttribute("src", item.imageInactive );
-//       //     imgInative.setAttribute("alt", item.name ); 
-//       //     divItem.appendChild(imgInative);
-
-//       //     const titleFood = document.createElement('h3')
-//       //     titleFood.setAttribute("class", "title-food" ); 
-//       //     titleFood.textContent = item.name;
-//       //     divItem.appendChild(titleFood);
-//       //     const descriptionFood = document.createElement('p');
-//       //     descriptionFood.setAttribute("class", "descriptionFood");
-//       //     descriptionFood.textContent = item.description;
-//       //     divItem.appendChild(descriptionFood);
-//       //     const priceFood= document.createElement('p');
-//       //     priceFood.setAttribute("class", "price-food");
-//       // priceFood.textContent = `US$ ${item.price}`;
-//       // divItem.appendChild(priceFood);
-//       // wapperMeat.appendChild(divItem)
-//               // return wapperMeat
-//                 // });
-         
-//       } else {
-//           console.error("Erro ao listar proteínas: ", response.status);
-//       }
-//   } catch (error) {
-//       console.error("Erro ao listar proteínas: van", error);
-//   }
-// }
+ 
 
 async function fetchProteins() {
   try {
