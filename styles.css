@@ -148,6 +148,7 @@ color: #FFFFFF;
    box-shadow: 0px 4px 12px 0px #E0DBBF99;
    padding: 0 15px;
    background: #FAFAED;
+   cursor: pointer;
  }
 
  .item img {
@@ -251,7 +252,7 @@ color: #FFFFFF;
      height: 316px;
      justify-content: center;
      margin: 0 4px;
-   }
+    }
  }
 
  /* Pagina de Sucesso */
