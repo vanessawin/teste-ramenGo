@@ -14,76 +14,84 @@
    max-height: 100%;
    height: 768px;
  }
+
  @media (max-width: 760px) {
-  
-  .fundoDesktop {
-    display: none;
-  }
-  .imagem-headar  {
-    display: none;
+
+   .fundoDesktop {
+     display: none;
    }
-  }
+
+   .imagem-headar {
+     display: none;
+   }
+ }
 
 
  /* Header Mobile */
  .header-mobile {
-  height: 677px;
-  background-image: url(./img/fundo-mobile.png);
-  
-  display: none;
- }
- @media (max-width: 759px) {
-  .header-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-}
- .logomobile {
-  width: 125px;
-  height: 16px;
-  position: absolute;
-  top: 20px;
- }
- .ilustracao-header {
-  position: absolute;
-  width: 265.px;
-  height: 269px ;
-  top: 60px;
- }
- .header-mobile h2 {
-  position: absolute;
-  top: 341px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 48px;
-font-weight: 900;
-line-height: 56px;
-text-align: center;
-color: #FFC024;
-}
-.header-mobile h1 {
-  position: absolute;
-  top: 406px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 120px;
-  font-weight: 900;
-  line-height: 100px;
-  text-align: center;
- color: #FAFAED;
-}
-.header-mobile p {
-  position: absolute;
-  top: 530px;
+   height: 677px;
+   background-image: url(./img/fundo-mobile.png);
 
-  width: 300px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-font-size: 16px;
-font-weight: 500;
-line-height: 20px;
-text-align: center;
-color: #FFFFFF;
-}
+   display: none;
+ }
+
+ @media (max-width: 759px) {
+   .header-mobile {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+   }
+ }
+
+ .logomobile {
+   width: 125px;
+   height: 16px;
+   position: absolute;
+   top: 20px;
+ }
+
+ .ilustracao-header {
+   position: absolute;
+   width: 265.px;
+   height: 269px;
+   top: 60px;
+ }
+
+ .header-mobile h2 {
+   position: absolute;
+   top: 341px;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 48px;
+   font-weight: 900;
+   line-height: 56px;
+   text-align: center;
+   color: #FFC024;
+ }
+
+ .header-mobile h1 {
+   position: absolute;
+   top: 406px;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 120px;
+   font-weight: 900;
+   line-height: 100px;
+   text-align: center;
+   color: #FAFAED;
+ }
+
+ .header-mobile p {
+   position: absolute;
+   top: 530px;
+
+   width: 300px;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+   text-align: center;
+   color: #FFFFFF;
+ }
 
 
  /* sliders */
@@ -91,10 +99,11 @@ color: #FFFFFF;
    margin-top: 115px;
    height: 900px;
  }
+
  @media (max-width: 759px) {
-  #menus {
-    margin-top: 50px;
-  }
+   #menus {
+     margin-top: 50px;
+   }
  }
 
  .slider-contener {
@@ -201,7 +210,7 @@ color: #FFFFFF;
    width: 213px;
    height: 60px;
    border-radius: 50px;
-   background-color: #C5C5C5;
+   background-color: rebeccapurple;
    color: #FFFFFF;
    text-align: left;
    padding-left: 20px;
@@ -217,7 +226,9 @@ color: #FFFFFF;
    /* Ajusta o espaço para a seta */
    margin: 0 auto;
  }
-
+ .btn-order:disabled {
+  background-color: #C5C5C5;
+ }
  .btn-order::after {
    content: '';
    display: block;
@@ -252,7 +263,7 @@ color: #FFFFFF;
      height: 316px;
      justify-content: center;
      margin: 0 4px;
-    }
+   }
  }
 
  /* Pagina de Sucesso */
@@ -457,4 +468,14 @@ color: #FFFFFF;
    .new-order {
      margin-bottom: 35px;
    }
+ }
+
+ .hover-item {
+   background-color: #1820EF;
+   color: #FFFFFF;
+   border-radius: 10px;
+   .title-food, .description-food, .price-food {
+    color: #FFFFFF;
+   }
+   
  }
